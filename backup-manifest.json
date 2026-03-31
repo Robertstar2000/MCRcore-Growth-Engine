@@ -1,0 +1,36 @@
+{
+  "repo": "MCRcore-Growth-Engine",
+  "backup_date": "2026-03-31T10:07:52.486662",
+  "backup_version": "1.0",
+  "total_files": 64,
+  "components": {
+    "core": [
+      "main.py",
+      "requirements.txt",
+      "Dockerfile",
+      "docker-compose.yml",
+      ".env.example"
+    ],
+    "docs": [
+      "README.md",
+      "MCRarchitecture.md",
+      "MCRsales.md"
+    ],
+    "src_agents": 15,
+    "src_skills": 11,
+    "src_services": 6,
+    "src_utils": 8,
+    "src_templates": 2,
+    "config": 7,
+    "db": 7
+  },
+  "secrets_excluded": true,
+  "restore_instructions": {
+    "step_1": "Clone repo: git clone https://github.com/Robertstar2000/MCRcore-Growth-Engine.git",
+    "step_2": "cp .env.example .env and fill in PLACEHOLDER values",
+    "step_3": "pip install -r requirements.txt",
+    "step_4": "python main.py init-db",
+    "step_5": "python main.py run-daily"
+  },
+  "linked_hermes_backup": "https://github.com/Robertstar2000/hermes-backup"
+}
